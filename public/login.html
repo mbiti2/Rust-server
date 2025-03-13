@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Welcome back into the adventure</h1>
+    <input id="name" type="text" placeholder="Enter your name please" />
+</body>
+
+    <script>
+        let inputElt = document.querySelector("#name")
+
+     
+    inputElt.addEventListener('keydown', (e) => {
+            if (e.key === "Enter" ) {
+                let name = e.target.value
+                location.href = `/?${name} `
+            }
+        })
+
+    </script>
+</html>

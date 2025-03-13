@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello!</title>
+</head>
+
+<body>
+    <h1>Hello!<span id="name"></span></h1>
+    <p>Hi from Adorsys-GIS</p>
+</body>
+<script>
+    let params = location.href;
+    let [_, name] = location.href.split('?');
+    console.log(params)
+
+    let elt = document.querySelector("#name")
+    elt.innerHTML = name
+</script>
+
+</html>
